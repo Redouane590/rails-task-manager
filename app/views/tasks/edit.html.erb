@@ -1,0 +1,28 @@
+<h1>edit</h1>
+<div class="container">
+<div class="d-flex">
+  <%= form_with model: @task do |f| %>
+<div>
+    <%= f.label :title, class: 'col-6' %>
+
+    <%= f.text_field :title, class: 'col-6' %>
+</div>
+<div>
+    <%= f.label :details, class: 'col-6' %>
+    <%= f.text_field :details, class: 'col-6' %>
+</div>
+
+<div>
+  <%= f.label :completed, class: 'col-6' %>
+    <%= f.check_box :completed, class: 'col-6' %>
+
+</div>
+
+
+
+  <div class="col-12"><%= f.submit  class: "w-100 p-0 m-0 no-padding"  %></div>
+
+
+  <% end %>
+</div>
+</div>
